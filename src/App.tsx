@@ -1,16 +1,18 @@
 import Header from './Components/Header';
 import './App.css'
-import Home from './Home'
-import Sobre from './Sobre-Nos'
-import Ajuda from './Ajuda'
-import Participantes from './Participantes'
+import Home from './Pages/Home'
+import Sobre from './Pages/Sobre-Nos'
+import Ajuda from './Pages/Ajuda'
+import Participantes from './Pages/Participantes'
+import Login from './Pages/Login';
+import Cadastro from './Pages/Cadastro';
+import Utilizacao from './Pages/Utilizacao';
 
 function App() {
   
   return (
     <>
-      <Header></Header>
-      <Participantes></Participantes>
+      <Utilizacao></Utilizacao>
     </>
   )
 }

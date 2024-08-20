@@ -1,0 +1,175 @@
+body{
+    background-color: #fff;
+}
+
+.cabecalho {
+    min-width: 100vw;
+    height: 11vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-left: 1vw;
+}
+
+/* CONTEÚDO */
+
+
+h1{
+  text-align: center;
+  margin-left: 10px;
+}
+
+.box-cadastro {
+  margin: auto;
+  background: linear-gradient(to top, #69baf0, rgb(182, 234, 255), #fff) ;
+  width: 450px;
+  border: black solid;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+form input[type="text"], form input[type="date"], form input[type="email"], form input[type="password"] {
+  width: 400px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #3393EC;
+  color: white;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  border: solid black 1px;
+  margin-top: 20px;
+  margin-right: 13px;
+  margin-left: 50px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+#veiculo{
+  width: 425px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width:1625px) {
+
+  li {
+    min-width: 13vw;
+  }
+
+  li a {
+    min-width: 13vw;
+  }
+
+  ul {
+    gap: 12vw;
+  }
+}
+
+
+@media screen and (max-width:1100px) {
+
+  li {
+    min-width: 14vw;
+  }
+
+  li a {
+    min-width: 14vw;
+  }
+
+  ul {
+    gap: 8vw;
+  }
+}
+
+
+@media screen and (max-width:922px) {
+  html {
+    font-size: 50%;
+  }
+
+  li {
+    min-width: 10vw;
+  }
+
+  li a {
+    min-width: 10vw;
+  }
+
+  ul {
+    gap: 10vw;
+  }
+
+  #logo, #div-img-usuario {
+    width: 100px;
+  }
+
+  #img-usuario {
+    width: 50px;
+  }
+}
+
+
+@media screen and (max-width:670px) {
+  html {
+    font-size: 40%;
+  }
+
+  .cabecalho {
+    height: 8vh;
+  }
+  
+  li {
+    min-width: 8vw;
+    height: 35px;
+    font-size: 2rem;
+  }
+
+  li a {
+    min-width: 8vw;
+  }
+
+  ul {
+    gap: 6vw;
+  }
+
+  #logo {
+    width: 70px;
+    margin-left: 2vw;
+  }
+  
+  #div-img-usuario {
+    width: 70px;
+  }
+
+  #img-usuario {
+    width: 45px;
+    padding-right: 2vw;
+  }
+
+  h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #paragrafo1 {
+    font-size: 3.6rem; 
+  }
+}

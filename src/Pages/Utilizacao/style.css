@@ -1,0 +1,97 @@
+.cabecalho {
+    width: 100vw;
+    height: 11vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-left: 1vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, 1fr);
+    /* grid-auto-rows: 150px;                   */
+    grid-template-areas: 
+    'header  header  header'
+    'titulo  titulo  titulo'
+    'pagina  pagina  pagina'
+    'pagina  pagina  pagina'  
+    'pagina  pagina  pagina'
+    ;
+}
+
+header {grid-area: header;}
+.titulo {grid-area: titulo;}
+.pagina {grid-area: pagina;}
+
+body{
+    background-color: rgb(71, 181, 255);
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.2rem;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.pagina{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12vw;
+    height: 60rem;
+    margin: 10px;
+}
+
+.pagina img{
+    width: auto;
+    height: 80%;
+    margin: 10px;
+}
+
+.texto-explicacao{
+    border: 2px solid rgb(0, 137, 228);
+    background-color: rgb(116, 198, 253);
+    height: auto;
+    width: 20%;
+    padding: 20px;
+}
+
+.texto-explicacao p{
+    font-size: xx-large;
+    padding: 10px;
+
+}
+
+@media screen and (max-width:861px) {
+    .cabecalho {
+        width: 100%;
+      }
+
+    .pagina{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:868px) {
+    
+    .pagina{
+        gap: 4vw;
+    }
+    
+    .texto-explicacao{
+        width: 100%;
+        padding: 0;
+    }
+}
