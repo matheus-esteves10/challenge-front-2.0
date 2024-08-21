@@ -5,7 +5,7 @@ const Cadastro = () => {
     return (
         <>
             <div className='cabecalho'>
-                <a href="../index.html">
+                <a href="/">
                     <img id="logo" src={logo} alt="Logo da Porto" />
                 </a>
             </div>

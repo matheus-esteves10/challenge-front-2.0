@@ -1,12 +1,14 @@
-import './style.css';
-import matheus from '../assets/img/foto-matheus.jpg'
-import caio from '../assets/img/foto-caio.jpg'
-import gabriel from '../assets/img/foto-gabriel.jpg'
-import github from '../assets/img/github.png'
+import './style.css'
+import matheus from '../../assets/img/foto-matheus.jpg'
+import caio from '../../assets/img/foto-caio.jpg'
+import gabriel from '../../assets/img/foto-gabriel.jpg'
+import github from '../../assets/img/github.png'
+import Header from '../../Components/Header';
 
 const Participantes = () => {
     return (
         <>
+            <Header></Header>
             <main className="conteudo">
                 <h1>Página de Integrantes</h1>
                 <div className="container">
@@ -36,7 +38,7 @@ const Participantes = () => {
                         <a href="https://github.com/gabrielfalanga" target="_blank"><img className="github" src={github} alt="Logo do GitHub" /></a> 
                     </div>
                 </div>
-                <a id="link-repo" href="https://github.com/matheus-esteves10/challenge2024-frontend.git" target="_blank">
+                <a id="link-repo" href="https://github.com/matheus-esteves10/challenge-front-2.0" target="_blank">
                     <div className="container" id="container-link">
                         <p>Repositório no GitHub</p>
                     </div>

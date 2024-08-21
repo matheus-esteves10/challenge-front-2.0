@@ -1,12 +1,14 @@
 import './style.css';
-import funcionarios from "../assets/img/funcionarios.png"
-import corretores from '../assets/img/corretores.png'
-import clientes from '../assets/img/clientes.png'
-import localizacao from '../assets/img/localizacao.png'
+import funcionarios from "../../assets/img/funcionarios.png"
+import corretores from '../../assets/img/corretores.png'
+import clientes from '../../assets/img/clientes.png'
+import localizacao from '../../assets/img/localizacao.png'
+import Header from '../../Components/Header';
 
 const Sobre = () => {
     return (
         <>
+            <Header></Header>
             <main className="conteudo">
                 <section className="container">
                     <h1>Quem somos?</h1>  

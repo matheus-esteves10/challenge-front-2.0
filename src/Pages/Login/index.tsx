@@ -23,7 +23,7 @@ const Login = () => {
                     <input type="submit" value="Login" />
                 </form>
                 <p id="texto-cadastro">Ainda não é cliente Porto? <br />
-                    <a className="link" href="../6-pagina-cadastro/cadastro.html">Cadastre-se</a>
+                    <a className="link" href="/cadastro">Cadastre-se</a>
                 </p>
                 <img className="img-user" src={usuario} alt="Ícone de usuário" />
                 <img className="img-password" src={senha} alt="Ícone de cadeado" />

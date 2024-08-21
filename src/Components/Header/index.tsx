@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     return (
         <header className="cabecalho">
       <div>
-        <a href="./index.html">
+        <a href="/">
           <img id="logo" src={logo} alt="Logo da Porto" />
         </a>
       </div>
@@ -15,17 +15,17 @@ const Header: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <a href="./2-pagina-sobre-nos/sobre-nos.html">
+            <a href="/sobre">
               Sobre nós
             </a>
           </li>
           <li>
-            <a href="./3-pagina-ajuda/ajuda.html">
+            <a href="/ajuda">
               Ajuda
             </a>
           </li>
           <li>
-            <a href="./4-pagina-participantes/participantes.html">
+            <a href="/participantes">
               Participantes
             </a>
           </li>
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       </nav>
 
       <div id="div-img-usuario">
-        <a href="./5-pagina-login/login.html">
+        <a href="/login">
           <img id="img-usuario" src={usuario} alt="Imagem de Pessoa representando o Usuário"/>
         </a>
       </div>

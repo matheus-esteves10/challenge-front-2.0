@@ -8,7 +8,7 @@ export default function Utilizacao() {
             <div className="container">
                 <header className="cabecalho">
                     <div>
-                        <a href="../index.html">
+                        <a href="/">
                             <img id="logo" src={logo} alt="Logo da Porto" />
                         </a>
                     </div>
@@ -24,7 +24,7 @@ export default function Utilizacao() {
                 </section>
             </div>
 
-            <script>
+            {/* <script>
                 {`window.watsonAssistantChatOptions = {
                     integrationID: "a505dc30-6f4e-4842-9864-40ab60151014", // The ID of this integration.
                     region: "us-south", // The region your integration is hosted in.
@@ -36,7 +36,7 @@ export default function Utilizacao() {
                     t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
                     document.head.appendChild</ t);
                 });`}
-            </script>
+            </script> */}
         </>
     );
 }

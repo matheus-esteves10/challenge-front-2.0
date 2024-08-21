@@ -1,8 +1,10 @@
+import Header from '../../Components/Header'
 import './style.css';
 
 const Ajuda = () => {
     return (
         <>
+        <Header></Header>
         <h1>Perguntas Frequentes</h1>
         <main className="conteudo">
             <div className="container">

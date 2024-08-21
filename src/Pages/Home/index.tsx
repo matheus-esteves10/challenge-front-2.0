@@ -1,9 +1,12 @@
 import './style.css';
-import robo from '../assets/img/robo-autocare.png'
+import robo from '../../assets/img/robo-autocare.png'
+import Header from '../../Components/Header';
+
 
 const Home = () => {
     return(
         <>
+        <Header></Header>
         <main className="conteudo">
       <h1>O que o <strong>AutoCare</strong> faz?</h1>
 
@@ -19,7 +22,7 @@ const Home = () => {
             <p>Agendamento com oficinas próximas de você</p>
           </div>
         </div>
-        <a href="./7-pagina-utilizacao/utlilizacao.html">
+        <a href="/utilizacao">
           <div className="box-botao">
             <p>Experimente o Serviço</p>
           </div>
