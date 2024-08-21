@@ -1,0 +1,170 @@
+.cabecalho {
+  min-width: 100vw;
+  height: 11vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  align-self: end;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 18vw;
+}
+
+li {
+  display: flex;
+
+  font-size: 2.6rem;
+  font-weight: 500;
+
+  min-width: 10vw;
+  height: 50px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #bde7ff;
+  transition: background-color .3s ease-in-out;
+  &:hover {
+    background-color: #88cdff;
+  }
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10vw;
+  height: 50px;
+  white-space: nowrap;
+  color: #000;
+
+  &:visited {
+    color: #000;
+  }
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  margin-left: 1vw;
+}
+
+#imgUsuario {
+  width: 65px;
+  height: auto;
+}
+
+#divImgUsuario {
+  width: 150px;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  padding-right: 1vw;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width:1625px) {  
+  li {
+    min-width: 13vw;
+  }
+
+  li a {
+    min-width: 13vw;
+  }
+
+  ul {
+    gap: 12vw;
+  }
+}
+
+
+@media screen and (max-width:1100px) {
+  li {
+    min-width: 14vw;
+  }
+
+  li a {
+    min-width: 14vw;
+  }
+
+  ul {
+    gap: 8vw;
+  }
+}
+
+
+@media screen and (max-width:922px) {
+  html {
+    font-size: 50%;
+  }
+
+  li {
+    min-width: 10vw;
+  }
+
+  li a {
+    min-width: 10vw;
+  }
+
+  ul {
+    gap: 10vw;
+  }
+
+  #logo, #divImgUsuario {
+    width: 100px;
+  }
+
+  #imgUsuario {
+    width: 50px;
+  }
+}
+
+
+@media screen and (max-width:670px) {
+  html {
+    font-size: 40%;
+  }
+
+  .cabecalho {
+    height: 8vh;
+  }
+  
+  li {
+    min-width: 8vw;
+    height: 35px;
+    font-size: 2rem;
+  }
+
+  li a {
+    min-width: 8vw;
+  }
+
+  ul {
+    gap: 6vw;
+  }
+
+  #logo {
+    width: 70px;
+    margin-left: 2vw;
+  }
+  
+  #divImgUsuario {
+    width: 70px;
+  }
+
+  #imgUsuario {
+    width: 45px;
+    padding-right: 2vw;
+  }
+}

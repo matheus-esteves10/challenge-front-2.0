@@ -57,7 +57,7 @@ body{
     margin: 10px;
 }
 
-.texto-explicacao{
+.textoExplicacao{
     border: 2px solid rgb(0, 137, 228);
     background-color: rgb(116, 198, 253);
     height: auto;
@@ -65,7 +65,7 @@ body{
     padding: 20px;
 }
 
-.texto-explicacao p{
+.textoExplicacao p{
     font-size: xx-large;
     padding: 10px;
 
@@ -85,12 +85,11 @@ body{
 
 
 @media screen and (max-width:868px) {
-    
     .pagina{
         gap: 4vw;
     }
     
-    .texto-explicacao{
+    .textoExplicacao{
         width: 100%;
         padding: 0;
     }

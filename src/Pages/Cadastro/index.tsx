@@ -1,15 +1,15 @@
-import './style.css';
+import styles from './Cadastro.module.css';
 import logo from '../../assets/img/logo-porto.png';
 
 const Cadastro = () => {
     return (
         <>
-            <div className='cabecalho'>
+            <div className={styles.cabecalho}>
                 <a href="/">
-                    <img id="logo" src={logo} alt="Logo da Porto" />
+                    <img id={styles.logo} src={logo} alt="Logo da Porto" />
                 </a>
             </div>
-            <div className="box-cadastro">
+            <div className={styles.boxCadastro}>
                 <h1>Crie sua conta Porto</h1>
                 <form>
                     <label htmlFor="nome">Nome:</label><br />

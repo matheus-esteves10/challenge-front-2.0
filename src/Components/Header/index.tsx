@@ -1,14 +1,14 @@
 import React from 'react';
-import './style.css';
+import styles from './Header.module.css';
 import logo from '../../assets/img/logo-porto.png';
 import usuario from '../../assets/img/usuario.png';
 
 const Header: React.FC = () => {
     return (
-        <header className="cabecalho">
+        <header className={styles.cabecalho}>
       <div>
         <a href="/">
-          <img id="logo" src={logo} alt="Logo da Porto" />
+          <img id={styles.logo} src={logo} alt="Logo da Porto" />
         </a>
       </div>
 
@@ -32,9 +32,9 @@ const Header: React.FC = () => {
         </ul>
       </nav>
 
-      <div id="div-img-usuario">
+      <div id={styles.divImgUsuario}>
         <a href="/login">
-          <img id="img-usuario" src={usuario} alt="Imagem de Pessoa representando o Usuário"/>
+          <img id={styles.imgUsuario} src={usuario} alt="Imagem de Pessoa representando o Usuário"/>
         </a>
       </div>
     </header>

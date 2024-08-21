@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './Login.module.css';
 import usuario from '../../assets/img/usuario.png';
 import senha from '../../assets/img/cadeado.png'
 import logo from '../../assets/img/logo-porto.png'
@@ -6,12 +6,12 @@ import logo from '../../assets/img/logo-porto.png'
 const Login = () => {
     return (
         <>
-            <div className='cabecalho'>
+            <div className={styles.cabecalho}>
                 <a href="../index.html">
-                <img id="logo" src={logo} alt="Logo da Porto" />
+                <img id={styles.logo} src={logo} alt="Logo da Porto" />
                 </a>
             </div>
-            <div className="box-cadastro">
+            <div className={styles.boxCadastro}>
                 <h1>Faça o Login na sua Conta Porto</h1>
                 <form>
                     <label htmlFor="cpf">CPF</label><br />
@@ -22,11 +22,11 @@ const Login = () => {
                     
                     <input type="submit" value="Login" />
                 </form>
-                <p id="texto-cadastro">Ainda não é cliente Porto? <br />
-                    <a className="link" href="/cadastro">Cadastre-se</a>
+                <p id={styles.textoCadastro}>Ainda não é cliente Porto? <br />
+                    <a className={styles.link} href="/cadastro">Cadastre-se</a>
                 </p>
-                <img className="img-user" src={usuario} alt="Ícone de usuário" />
-                <img className="img-password" src={senha} alt="Ícone de cadeado" />
+                <img className={styles.imgUser} src={usuario} alt="Ícone de usuário" />
+                <img className={styles.imgPassword} src={senha} alt="Ícone de cadeado" />
             </div>
         </>
     )

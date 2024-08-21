@@ -1,24 +1,24 @@
-import './style.css';
+import styles from './Utilizacao.module.css';
 import robo from '../../assets/img/robo-autocare.png'
 import logo from '../../assets/img/logo-porto.png'
 
-export default function Utilizacao() {
+const Utilizacao = () => {
     return (
         <>
-            <div className="container">
-                <header className="cabecalho">
+            <div className={styles.container}>
+                <header className={styles.cabecalho}>
                     <div>
                         <a href="/">
-                            <img id="logo" src={logo} alt="Logo da Porto" />
+                            <img id={styles.logo} src={logo} alt="Logo da Porto" />
                         </a>
                     </div>
                 </header>
-                <section className="titulo">
+                <section className={styles.titulo}>
                     <h2>Bem-vindo ao AutoCare</h2>
                 </section>
-                <section className="pagina">
+                <section className={styles.pagina}>
                     <img src={robo} alt="Robo Do AutoCare" />
-                    <div className="texto-explicacao">
+                    <div className={styles.textoExplicacao}>
                         <p>Para iniciar a utilização do serviço, clique no círculo preto no canto inferior direito de sua página.</p>
                     </div>
                 </section>
@@ -40,3 +40,5 @@ export default function Utilizacao() {
         </>
     );
 }
+
+export default Utilizacao;

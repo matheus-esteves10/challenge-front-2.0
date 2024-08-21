@@ -1,6 +1,6 @@
 import './App.css'
 import Home from './Pages/Home'
-import Sobre from './Pages/Sobre-Nos'
+import Sobre from './Pages/SobreNos'
 import Login from './Pages/Login';
 import Cadastro from './Pages/Cadastro';
 import Utilizacao from './Pages/Utilizacao';
