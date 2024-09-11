@@ -7,7 +7,7 @@ const Login = () => {
     return (
         <>
             <div className={styles.cabecalho}>
-                <a href="../index.html">
+                <a href="/">
                 <img id={styles.logo} src={logo} alt="Logo da Porto" />
                 </a>
             </div>
