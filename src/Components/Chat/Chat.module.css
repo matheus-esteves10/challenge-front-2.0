@@ -1,0 +1,77 @@
+.container {
+    width: 65vw;
+    height: 70vh;
+    background-color: #2d69ec;
+    border-radius: 10px;
+    padding: 0 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.inicioChat {
+    height: 80%;
+    margin-bottom: 70px;
+    
+    h1 {
+        font-size: 64px;
+        color: #a2c3f8;
+
+        b {
+            color: #ccc;
+        }
+    }
+    img {
+        width: 400px;
+    }
+}
+
+.displayNone {
+    display: none;
+    visibility: hidden;
+}
+
+.divInput {
+    width: 80%;
+    height: 10%;
+
+    input {
+        width: 90%;
+        height: 100%;
+        background-color: #ddd;
+        padding-left: 10px;
+        border-radius: 10px 0 0 10px;
+        font-size: 30px;
+    }
+
+    button {
+        width: 10%;
+        height: 100%;
+        background-color: rgb(8, 127, 206);
+        border-radius: 0 10px 10px 0;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+.divMensagens {
+    width: 95%;
+    height: 80%;
+    background-color: #2d69ec;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow-y: auto;
+}
+
+.divMensagens::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem para WebKit */
+}
+
+.divMensagens {
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+}

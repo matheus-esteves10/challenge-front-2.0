@@ -20,7 +20,7 @@ const Ajuda = () => {
                 <h2>Como é feito o orçamento?</h2>
             </div>
             <div className={styles.resposta}>
-                <p>O orçamento é realizado por meio de uma padronização do preço de determinada peça para o determinado veículo. O orçamento foi definido por meio de pesquisas que levaram a essa média</p>
+                <p>O orçamento é realizado por meio de uma padronização do preço de determinada peça para o determinado veículo. O orçamento foi definido por meio de pesquisas que levaram a essa média.</p>
             </div>
             </div>
             <div className={styles.container}>
