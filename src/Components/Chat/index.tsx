@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Mensagem from '../Mensagem';
 import { MensagemProps } from '../../interfaces';
 import styles from "./Chat.module.css";
@@ -8,6 +8,8 @@ const Chat = () => {
     const [chatFoiIniciado, setChatFoiIniciado] = useState(false); 
     const [inputValue, setInputValue] = useState('');
     const [mensagens, setMensagens] = useState<MensagemProps[]>([]);
+
+    const divMensagensRef = useRef<HTMLDivElement>(null); // Referência para a div que contém as mensagens
   
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       setInputValue(event.target.value);
@@ -49,6 +51,13 @@ const Chat = () => {
             handleSend();
         }
     };
+
+    // UseEffect para rolar automaticamente para o final quando as mensagens forem atualizadas
+    useEffect(() => {
+      if (divMensagensRef.current) {
+          divMensagensRef.current.scrollTop = divMensagensRef.current.scrollHeight;
+      }
+  }, [mensagens]); // Roda sempre que o estado de mensagens mudar
   
     return (
       <div className={styles.container}>
@@ -56,7 +65,7 @@ const Chat = () => {
             <h1>Auto<b>Care</b></h1>
             <img src={robo} alt="Imagem de carro robô" />
         </div>
-        <div className={chatFoiIniciado ? styles.divMensagens : styles.displayNone}>
+        <div ref={divMensagensRef} className={chatFoiIniciado ? styles.divMensagens : styles.displayNone}>
           {mensagens.map((mensagem, index) => (
             <Mensagem key={index} texto={mensagem.texto} isResponse={mensagem.isResponse} />
           ))}
