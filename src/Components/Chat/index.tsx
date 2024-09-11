@@ -10,8 +10,6 @@ const Chat = () => {
     const [inputValue, setInputValue] = useState('');
     const [mensagens, setMensagens] = useState<MensagemProps[]>([]);
     
-    const [tipoProblema, setTipoProblema] = useState('nao_identificado');
-    
     const divMensagensRef = useRef<HTMLDivElement>(null); // Referência para a div que contém as mensagens
   
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
