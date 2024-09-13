@@ -1,8 +1,14 @@
 # PROJETO PORTO AUTOCARE
 
-- O projeto foi desenvolvido ultilizando REACT + VITE + TypeScript
+Desenvolvido com React + Vite + TypeScript
 
-- Dentro do site estão presentes as páginas de explicação (home, participantes, sobre nós e ajuda), páginas de cadastro e login e a página de utilização.
+<img src="https://skillicons.dev/icons?i=react,vite,ts" />
+
+---
+
+Dentro do site estão presentes as páginas de explicação (home, participantes, sobre nós e ajuda), páginas de cadastro e login e a página de utilização.
+
+---
 
 ## Na página de utilização, há o nosso chatbot que tem como função automatizar os processos de:
     
