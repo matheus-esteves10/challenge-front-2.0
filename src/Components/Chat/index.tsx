@@ -146,9 +146,9 @@ const Chat = () => {
             value={inputValue} 
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            placeholder="Descreva a situação detalhadamente..." 
+            placeholder="Descreva a situação..." 
           />
-          <button onClick={handleSend}>Enviar</button>
+          <button onClick={handleSend}><p>Enviar</p></button>
         </div>
       </div>
     );
